@@ -279,7 +279,7 @@ export default function Home() {
                 <h3>Toastmasters Association</h3>
                 <p>Serving as Secretary and actively participating in weekly club meetings.</p>
                 <Image
-                  src="/images/toastmasters-01.jpg"
+                  src="/images/toastmasters.jpg"
                   alt="Toastmasters Association"
                   width={1200}
                   height={520}
