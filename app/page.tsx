@@ -11,7 +11,8 @@ export const projects: Project[] = [
     category: 'Founder’s office · Startup operations',
     summary: 'Working across customer acquisition, planning and the day-to-day needs of an early-stage team.',
     visual: 'art-argus',
-    image: '/images/argus.jpg',
+    logo: '/images/argus.jpg',
+    logoShape: 'rounded',
     detail: 'A founder’s office role gave me a close view of how an early-stage company moves from plans to execution. I supported customer acquisition and helped with the planning and coordination needed to keep work moving.',
     role: 'Founder’s Office Intern',
     points: ['Supported customer acquisition activities.', 'Helped with planning and execution across workstreams.', 'Worked closely with the founding team on operational priorities.'],
@@ -24,7 +25,8 @@ export const projects: Project[] = [
     category: 'Data collection · Community & operations',
     summary: 'Helping source real-world activity recordings, first through businesses in India and later across international markets.',
     visual: 'art-saturn',
-    image: '/images/saturn-labs.jpg',
+    logo: '/images/saturn-labs.jpg',
+    logoShape: 'rounded',
     detail: 'Saturn Labs is a data collection company. I supported its data collection work by recruiting businesses and participants to record everyday tasks using wearable cameras. The work evolved from local business outreach in India to participant outreach across the US, UK and Europe.',
     role: 'Community & Operations',
     points: ['Approached business owners in India and explained the data collection programme.', 'Persuaded businesses to let workers wear cameras while carrying out their regular tasks.', 'As the programme expanded, conducted calls with people in the US, UK and Europe to explain the recording process and recruit participants.', 'Helped build and coordinate a distributed community of 200+ gig workers.'],
@@ -37,7 +39,8 @@ export const projects: Project[] = [
     category: 'Family business · Retail',
     summary: 'Learning business from the inside while helping manage a family-owned clothing shop.',
     visual: 'art-shyam',
-    image: '/images/shyam-bazaar.jpg',
+    logo: '/images/shyam-bazaar.jpg',
+    logoShape: 'circle',
     detail: 'Shyam Bazaar is a clothing shop started by my father. I help with its management and get involved in the practical decisions that keep a retail business running.',
     role: 'Business operations & marketing',
     points: ['Support day-to-day management and accounting.', 'Contribute to marketing and promotional planning.', 'Help develop offers to encourage customer engagement.', 'Introduced a loyalty card initiative that received a positive response and brought back repeat customers.'],
@@ -50,7 +53,8 @@ export const projects: Project[] = [
     category: 'Entrepreneurial experiment',
     summary: 'A small campus venture that generated ₹8,000 in revenue.',
     visual: 'art-stall',
-    image: '/images/college-stall.jpg',
+    logo: '/images/college-stall.png',
+    logoShape: 'crest',
     detail: 'I set up a game stall at a college event as a small entrepreneurial experiment. It gave me a chance to test an idea in a real setting and see what it takes to attract participants and generate revenue.',
     role: 'Initiator & operator',
     points: ['Set up and operated a game stall at a college event.', 'Generated ₹8,000 in revenue.', 'Got practical exposure to running a small on-ground activity.'],
@@ -63,7 +67,8 @@ export const projects: Project[] = [
     category: 'Business · Finance · Learning in public',
     summary: 'Exploring how to communicate ideas around business and finance through content.',
     visual: 'art-content',
-    image: '/images/content-creation.jpg',
+    logo: '/images/content-creation.png',
+    logoShape: 'rounded',
     detail: 'I have been experimenting with creating content around business and finance. It is an ongoing learning process and a way to explore ideas, practise communication and share what I find interesting.',
     role: 'Independent creator',
     points: ['Explore topics across business and finance.', 'Experiment with formats and ways to explain ideas.', 'Learn by researching, creating and publishing.'],
@@ -184,7 +189,16 @@ export default function Home() {
                 <div className="timeline-date">JUL 2026 — AUG 2026</div>
                 <div className="timeline-main">
                   <div className="timeline-top">
-                    <h3>Argus</h3>
+                    <div className="timeline-brand">
+                      <Image
+                        src="/images/argus.jpg"
+                        alt="Argus logo"
+                        width={34}
+                        height={34}
+                        className="timeline-logo"
+                      />
+                      <h3>Argus</h3>
+                    </div>
                     <span>Founder’s Office Intern</span>
                   </div>
                   <p>Supported customer acquisition, planning and execution while working closely with the founding team.</p>
@@ -195,7 +209,16 @@ export default function Home() {
                 <div className="timeline-date">FEB 2026 — JUL 2026</div>
                 <div className="timeline-main">
                   <div className="timeline-top">
-                    <h3>Saturn Labs</h3>
+                    <div className="timeline-brand">
+                      <Image
+                        src="/images/saturn-labs.jpg"
+                        alt="Saturn Labs logo"
+                        width={34}
+                        height={34}
+                        className="timeline-logo"
+                      />
+                      <h3>Saturn Labs</h3>
+                    </div>
                     <span>Community & Operations</span>
                   </div>
                   <p>Helped recruit businesses and participants for real-world data collection, supporting the programme’s expansion from India to the US, UK and Europe.</p>
@@ -267,8 +290,8 @@ export default function Home() {
                 <Image
                   src="/images/sih-winner.jpg"
                   alt="Smart India Hackathon winner"
-                  width={1200}
-                  height={520}
+                  width={4096}
+                  height={3072}
                   className="photo-slot"
                 />
               </article>
@@ -281,8 +304,8 @@ export default function Home() {
                 <Image
                   src="/images/toastmasters.jpg"
                   alt="Toastmasters Association"
-                  width={1200}
-                  height={520}
+                  width={1167}
+                  height={531}
                   className="photo-slot"
                 />
               </article>
